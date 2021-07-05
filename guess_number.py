@@ -6,10 +6,9 @@ guess = int(input("Guess a number between 1 to 10: "))
 
 if guess == answer:
     print("guessed correctly")
+elif guess < answer:
+    print("Nope, it's higher")
 else:
-    if guess < answer:
-        print("Nope, it's higher")
-    else:
-        print("Nope, it's lower")
+    print("Nope, it's lower")
 
 print(f"The number was: {answer}")
